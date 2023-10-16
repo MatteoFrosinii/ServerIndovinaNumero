@@ -33,10 +33,6 @@ public class App
                 stringaRicevuta = in.readLine();
                 numeroIndovinato = Integer.parseInt(stringaRicevuta);
                 totTentativi++;
-                System.out.println("numeroIndovinato "+numeroIndovinato);
-                System.out.println("numeroDaIndovinare "+numeroDaIndovinare);
-                System.out.println(numeroIndovinato == numeroDaIndovinare);
-                System.out.println(numeroIndovinato < numeroDaIndovinare);
                 if(numeroIndovinato == numeroDaIndovinare){
                     out.writeBytes("I"+'\n');
                     out.writeBytes(String.valueOf(totTentativi));
